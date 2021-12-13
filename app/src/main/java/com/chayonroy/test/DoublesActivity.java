@@ -15,10 +15,10 @@ public class DoublesActivity extends AppCompatActivity {
     Button pointa, pointb, undoa, undob, btn;
 
     TextView ascore, bscore, acenter, bcenter;
-    TextView aplayer1,aplayer2,bpalayer1,bplayer2;
+    TextView aplayer1,aplayer2,bpalayer1,bplayer2,teamA, teamB;
     int count_a, count_b;
 
-    String p1="Chayon", p2="Santonu";
+    String pl1a, pl2a, pl1b, pl2b;
     CardView alft, aright, bleft, bright;
 
 
@@ -38,10 +38,24 @@ public class DoublesActivity extends AppCompatActivity {
         acenter=findViewById(R.id.ascorecen);
         bcenter=findViewById(R.id.bscorecen);
 
+        teamA=findViewById(R.id.TeamA);
+        teamB=findViewById(R.id.TeamB);
+
         aplayer1=findViewById(R.id.a_player_1);
         aplayer2=findViewById(R.id.a_player_2);
         alft=findViewById(R.id.a_lft_crt);
         aright=findViewById(R.id.a_rit_crt);
+
+        String p1a=getIntent().getStringExtra("pla1");
+        aplayer1.setText(p1a+"");
+        pl1a=p1a;
+
+        String p2a=getIntent().getStringExtra("pla2");
+        aplayer2.setText(p2a+"");
+        pl2a=p2a;
+        teamA.setText("Team A: "+ p1a + " & "+p2a);
+        teamB.setText("Team B: "+ p1a + " & "+p2a);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,14 +114,14 @@ public class DoublesActivity extends AppCompatActivity {
 
         if (count_a % 2==0)
         {
-            aplayer1.setText(p1+"");
+            aplayer1.setText(pl1a+"");
             aright.setCardBackgroundColor(Color.parseColor("#f65151"));
             alft.setCardBackgroundColor(Color.parseColor("#035409"));
 
         }
         else if (count_a % 2==1)
         {
-            aplayer1.setText(p2+"");
+            aplayer1.setText(pl2a+"");
             alft.setCardBackgroundColor(Color.parseColor("#f65151"));
             aright.setCardBackgroundColor(Color.parseColor("#035409"));
 
@@ -118,12 +132,12 @@ public class DoublesActivity extends AppCompatActivity {
 
         if (count_a % 2==1)
         {
-            aplayer2.setText(p1+"");
+            aplayer2.setText(pl1a+"");
 
         }
         else if (count_a % 2==0)
         {
-            aplayer2.setText(p2+"");
+            aplayer2.setText(pl2a+"");
         }
     }// Player name change Function of A left cort
 }// AppCompatActivity
