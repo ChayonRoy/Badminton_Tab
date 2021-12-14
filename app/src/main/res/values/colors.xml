@@ -10,4 +10,8 @@
     <color name="normal_bg">#035409</color>
     <color name="set_bg">#f65151</color>
     <color name="main_back">#9C27B0</color>
+    <color name="home_bg">#100F14</color>
+    <color name="home_text">#7C80FD</color>
+    <color name="home_txt_bg">#180F2B</color>
+    <color name="home_txt_bg2">#212026</color>
 </resources>

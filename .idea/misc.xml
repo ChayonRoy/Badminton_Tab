@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_Development/projects/test/app/src/main/res/drawable/home_btn_bg.xml" value="0.287109375" />
         <entry key="..\:/Android_Development/projects/test/app/src/main/res/layout/activity_doubles.xml" value="0.264453125" />
         <entry key="..\:/Android_Development/projects/test/app/src/main/res/layout/activity_doubles_form.xml" value="0.264453125" />
         <entry key="..\:/Android_Development/projects/test/app/src/main/res/layout/activity_doubles_scoreboard.xml" value="0.25" />

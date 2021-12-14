@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5E38A1"
+    android:background="@color/home_bg"
     tools:context=".MainActivity">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Welcome"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/main_back"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +37,9 @@
 
     <Button
         android:id="@+id/Singles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="214dp"
+        android:layout_height="58dp"
+        android:background="@drawable/home_btn_bg"
         android:text="Singles Match"
         app:layout_constraintBottom_toTopOf="@+id/Dounles"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,9 +50,10 @@
 
     <Button
         android:id="@+id/Dounles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="207dp"
+        android:layout_height="52dp"
         android:layout_marginTop="160dp"
+        android:background="@drawable/home_btn_bg"
         android:text="Doubles Match"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
