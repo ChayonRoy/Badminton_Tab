@@ -39,7 +39,7 @@
         android:id="@+id/Singles"
         android:layout_width="214dp"
         android:layout_height="58dp"
-        android:background="@drawable/home_btn_bg"
+        android:background="@drawable/btn_bg_new"
         android:text="Singles Match"
         app:layout_constraintBottom_toTopOf="@+id/Dounles"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chayonroy.test">
+    package="com.chayonroy.BadmintonTab">
 
     <application
         android:allowBackup="true"
@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".DoublesFormActivity"
+            android:name="com.chayonroy.BadmintonTab.DoublesFormActivity"
             android:exported="false" />
         <activity
-            android:name=".DoublesActivity"
+            android:name="com.chayonroy.BadmintonTab.DoublesActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.chayonroy.BadmintonTab.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

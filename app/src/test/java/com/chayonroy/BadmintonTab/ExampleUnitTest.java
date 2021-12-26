@@ -1,4 +1,4 @@
-package com.chayonroy.test;
+package com.chayonroy.BadmintonTab;
 
 import org.junit.Test;
 
