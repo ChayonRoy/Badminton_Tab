@@ -264,12 +264,57 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2nd activity"
+        android:layout_width="74dp"
+        android:layout_height="41dp"
+        android:background="@drawable/btn_bg_new"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="2nd Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/point_a"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <Button
+        android:id="@+id/B_2nd_service"
+        android:layout_width="74dp"
+        android:layout_height="41dp"
+        android:background="@drawable/btn_bg_new"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="2nd Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/point_b"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <ToggleButton
+        android:id="@+id/side_out"
+        android:layout_width="153dp"
+        android:layout_height="42dp"
+        android:background="@drawable/toggle_bg"
+        android:textOff="A"
+        android:textOn="B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_bg_new"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="Game Over"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
