@@ -10,14 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name="com.chayonroy.BadmintonTab.DoublesFormActivity"
+            android:name=".SinglesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".InternationalDoublesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GameOver"
+            android:exported="false"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DoublesFormActivity"
             android:exported="false" />
         <activity
-            android:name="com.chayonroy.BadmintonTab.DoublesActivity"
+            android:name=".DoublesActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.chayonroy.BadmintonTab.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

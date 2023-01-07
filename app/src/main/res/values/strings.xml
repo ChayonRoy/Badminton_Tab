@@ -3,4 +3,5 @@
     <string name="Welcome">Welcome To Badminton Tab</string>
     <string name="input_Name">Insert Players Name</string>
     <string name="service_1st"> Who Will Service First</string>
+    <string name="developer"> Developed by: Chayon Roy</string>
 </resources>
