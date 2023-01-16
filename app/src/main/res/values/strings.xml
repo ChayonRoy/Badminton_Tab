@@ -4,4 +4,6 @@
     <string name="input_Name">Insert Players Name</string>
     <string name="service_1st"> Who Will Service First</string>
     <string name="developer"> Developed by: Chayon Roy</string>
+    <string name="local_match"> Double Service Match</string>
+    <string name="choose_match"> Choose A Match </string>
 </resources>

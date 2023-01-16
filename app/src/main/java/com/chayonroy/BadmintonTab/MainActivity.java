@@ -19,13 +19,22 @@ public class MainActivity extends AppCompatActivity {
         singles=findViewById(R.id.Singles);
         doubles=findViewById(R.id.Dounles);
 
-        doubles.setOnClickListener(new View.OnClickListener() {
+
+        singles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,DoublesFormActivity.class);
+                Intent intent= new Intent(MainActivity.this,SingleFormActivity.class);
                 startActivity(intent);
             }
         });
+        doubles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,DoublesChoiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

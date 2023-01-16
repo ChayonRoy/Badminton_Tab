@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/home_bg"
-    tools:context=".MainActivity">
-
+    tools:context=".DoublesChoiceActivity"
+    android:background="@color/form_bg">
 
     <TextView
         android:id="@+id/textView"
@@ -21,7 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.063" />
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="437dp"
@@ -33,14 +31,14 @@
         app:layout_constraintVertical_bias="0.25"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/trophy" />
+        app:lottie_rawRes="@raw/games_bg" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Let's Play"
+        android:text="@string/choose_match"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -51,13 +49,13 @@
         app:layout_constraintVertical_bias="0.065" />
 
     <Button
-        android:id="@+id/Singles"
+        android:id="@+id/International"
         android:layout_width="214dp"
         android:layout_height="58dp"
-        android:background="@drawable/btn_bg_new"
+        android:background="@drawable/home_btn_bg"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:text="Singles Match"
-        app:layout_constraintBottom_toTopOf="@+id/Dounles"
+        android:text="International Match"
+        app:layout_constraintBottom_toTopOf="@+id/Local"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,17 +63,18 @@
         app:layout_constraintVertical_bias="0.827" />
 
     <Button
-        android:id="@+id/Dounles"
+        android:id="@+id/Local"
         android:layout_width="207dp"
         android:layout_height="52dp"
         android:layout_marginTop="160dp"
-        android:background="@drawable/home_btn_bg"
+        android:background="@drawable/btn_bg_new"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:text="Doubles Match"
+        android:text="@string/local_match"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.333" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

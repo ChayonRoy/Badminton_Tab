@@ -13,10 +13,13 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class DoublesActivity extends AppCompatActivity {
 
     Button pointa, pointb, undoa, undob, A_2nd_srv,B_2nd_srv, sound_play, game_over;
     ToggleButton sideout;
+    LottieAnimationView button_bg;
 
     TextView ascore, bscore, acenter, bcenter;
     TextView aplayer1,aplayer2,bplayer1,bplayer2,teamA, teamB;
@@ -49,6 +52,7 @@ public class DoublesActivity extends AppCompatActivity {
         sideout = findViewById(R.id.side_out);
         sound_play = findViewById(R.id.sound_play);
         game_over = findViewById(R.id.button3);
+        button_bg = findViewById(R.id.voice_play_bg);
 
         ascore =findViewById(R.id.ascore);
         bscore = findViewById(R.id.BScore);
@@ -82,6 +86,28 @@ public class DoublesActivity extends AppCompatActivity {
         String p2b=getIntent().getStringExtra("plb2");// Input Team B P2 name
         bplayer2.setText(p2b+"");
         pl2b=p2b;
+        Intent i = getIntent();
+        int val_serve_a = i.getIntExtra("serveA",0); // Input Team A Score
+        int val_serve_b =i.getIntExtra("serveB",0);  // Input Team B Score
+
+        if(val_serve_a == 1)
+        {
+            pointa.setEnabled(true);
+            pointb.setEnabled(false);
+            undoa.setEnabled(true);
+            undob.setEnabled(false);
+            sideout.setChecked(false);
+            aright.setCardBackgroundColor(Color.parseColor("#f65151"));
+        }
+        if(val_serve_b == 1)
+        {
+            pointa.setEnabled(false);
+            pointb.setEnabled(true);
+            undoa.setEnabled(false);
+            undob.setEnabled(true);
+            sideout.setChecked(true);
+            bright.setCardBackgroundColor(Color.parseColor("#f65151"));
+        }
 
         teamA.setText("Team A: "+ p1a + " & "+p2a);
         teamB.setText("Team B: "+ p1b + " & "+p2b);
@@ -237,7 +263,10 @@ public class DoublesActivity extends AppCompatActivity {
                     sound_B_side();
                 }
 
+                button_bg.playAnimation();
+
             }
+
         });
 
         game_over.setOnClickListener(new View.OnClickListener() {
